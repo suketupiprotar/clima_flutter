@@ -11,7 +11,7 @@ class Location {
       await Geolocator.checkPermission();
       await Geolocator.requestPermission();
       Position position = await Geolocator.getCurrentPosition(
-          desiredAccuracy: LocationAccuracy.low);
+          desiredAccuracy: LocationAccuracy.high);
       // TODO: low to high for high accuracy
       // high then more accuracy and battery will drop more
       // print(position);
